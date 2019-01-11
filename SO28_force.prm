@@ -1,5 +1,5 @@
 nhdfiles 1
-hd0.name inputs/SOhydro.nc
+hd0.name EAflow.nc
 
 # Bottom stress
 # BottomStress inputs/stress/stress.nc
@@ -18,26 +18,24 @@ ts_on_hydro_time 1
 ##########################################
 ## TO DO ##
 # Rain and evaporation
-Precipitation inputs/meteor/times1.6.nc
-Evaporation inputs/meteor/84-95.nc
-
-# Solar time series data file
-Solar_radiation inputs/SOsolar.ts
-Solar_radiation_rewind 1
+Precipitation times16.nc
+Evaporation 84-95.nc
 
 # Temperature time series data file
 use_tempfiles 1
 # The number of temperature input files
 ntempfiles 1
 # The names of the temperature input files.
-Temperature0.name inputs/SOtemp.nc
+Temperature0.name EAtemp.nc
+temp_rewind 1
 
 # Salinity time series data file
 use_saltfiles 1
 # The number of salinity files
 nsaltfiles 1
 # The names of the salinity input files
-Salinity0.name inputs/SOsalt.nc
+Salinity0.name EAsalt.nc
+salt_rewind 1
 
 use_phFiles 0
 
@@ -74,3 +72,10 @@ typeEconts 0
 nMPAts 0
 typeMPAts 0
 
+inputs_tout 1
+
+nInceFiles 1
+Ice0.name ice.nc
+
+# use_vertMixFiles
+use_VertMixFiles 0
