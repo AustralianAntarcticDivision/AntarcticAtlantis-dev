@@ -1,1 +1,0 @@
-/home/shared/svn/atlantis/atlantismain/atlantisMerged -i input.nc 0 -o output.nc -r SO28_run.prm -f SO28_forcedummy.prm -p SO28_physics.prm -b SO28_biol.prm -h SO28_harvest_nofishing.prm -s AntarcticGroupsnew.csv -d output
