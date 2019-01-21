@@ -1,0 +1,7 @@
+ROMS output -> polygon conversion (Mike R) -> hydroconstruct -> negen -> Atlantis
+
+hydroconstruct -f flowout.cdf -t tempout.cdf -s saltout.cdf -r params_EAhydroconstruct.prm
+
+ncgen -o EAtemp.nc tempout.cdf
+ncgen -o EAsalt.nc saltout.cdf
+ncgen -o EAflow.nc flowout.cdf
